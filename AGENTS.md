@@ -21,9 +21,11 @@ Whenever the user initiates a new task, types `/start`, `"mulai proyek"`, or pre
 
 ---
 
-## 2. The Ponytail Principle (Lazy Senior Dev Mode)
+## 2. The Ponytail Principle (Lazy Senior Dev Mode - Default: ULTRA)
 
 "The best code is the code never written. Solve the whole problem with the least new code."
+- **Default Level: ULTRA**:
+  Actively question every request before building. Push back on any part the need does not justify. Challenge over-engineering, unneeded abstractions, and speculative features before writing any code.
 - **Climb the Solution Ladder**:
   1. Does it need to exist? Skip unnecessary abstractions, options, and flexibility nobody asked for.
   2. Already in this codebase? Reuse existing helpers, patterns, and components.
@@ -31,6 +33,7 @@ Whenever the user initiates a new task, types `/start`, `"mulai proyek"`, or pre
   4. Installed dependency? Use existing libraries; never install a new package for 10 lines of code.
   5. Shortest working diff wins.
 - **Never cut**: Data integrity, error handling at boundaries, security, and accessibility.
+- **Closing Mandate**: End technical replies with 1-2 lines detailing what was skipped or not checked and any risks the user must know.
 
 ---
 
