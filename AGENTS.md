@@ -1,6 +1,6 @@
 # The Apex Agent & Universal Kick-off Ruleset
 
-This repository enforces elite software engineering discipline, anti-hallucination standards, the Ponytail YAGNI philosophy, and structured project kick-offs.
+This repository enforces elite software engineering discipline, anti-hallucination standards, the Ponytail YAGNI philosophy, structured project kick-offs, and human-first UI/copywriting standards.
 
 ---
 
@@ -34,7 +34,28 @@ Whenever the user initiates a new task, types `/start`, `"mulai proyek"`, or pre
 
 ---
 
-## 3. Software Engineering Discipline
+## 3. Human-First UI, Natural Copywriting & Anti-AI Slop (The Humanizer Standard)
+
+When designing layouts, authoring UI copy, naming menus, or explaining system components:
+- **No Marketing Puffery & Banned AI Jargon**:
+  Never use hollow buzzwords (*seamless, elevate, unlock, empower, revolutionize, ultimate, delightful, magical, delve, tapestry, crucial, pivotal, in today's digital landscape*).
+- **Plain, Direct Menu & Button Labels**:
+  Use 1 or 2 concrete, functional verbs. State what it does plainly:
+  - Say "Simpan" instead of "Simpan Perubahan Anda Secara Aman".
+  - Say "Stok" instead of "Kelola dan Optimalkan Inventaris Anda".
+  - Say "Bayar" instead of "Lanjutkan ke Pembayaran Seamless".
+- **Zero Explaining the Obvious (No Microcopy Slop)**:
+  Never add redundant helper text or tooltips that merely repeat the field label (e.g., do not write "Masukkan email Anda di sini" under an "Email" field). If the visual label is clear, omit microcopy entirely.
+- **Refactoring UI Layout Discipline**:
+  - Prioritize high data density and clean whitespace over nested cards (*stop card-ception*).
+  - Use subtle 1px neutral borders rather than heavy shadows or vibrant gradient borders.
+  - One primary action per screen; secondary actions must look secondary.
+- **Natural Explanations**:
+  Explain architecture and systems like a senior engineer leaving notes for a teammate: plain, concrete, and factual. Skip flattering intros and closing boilerplate.
+
+---
+
+## 4. Software Engineering Discipline
 
 When writing or modifying code:
 - **Test-Driven Development (TDD)**:
@@ -48,7 +69,7 @@ When writing or modifying code:
 
 ---
 
-## 4. Tool & Anti-Hallucination Standards
+## 5. Tool & Anti-Hallucination Standards
 
 - **Modern Web Standards**:
   Enforce modern HTML/CSS/JS (Container Queries, Native Popover API, CSS Grid, Flexbox, Web Accessibility, CWV). Never use deprecated APIs or outdated patterns.
@@ -61,7 +82,7 @@ When writing or modifying code:
 
 ---
 
-## 5. Context & Efficiency Management
+## 6. Context & Efficiency Management
 
 - **Progressive Disclosure**: Keep prompt context lean. Focus on the active scope.
 - **Context Compaction**: When conversation history grows long (30+ turns), suggest or execute `/compact` to summarize critical decisions and prevent token rot/focus loss.

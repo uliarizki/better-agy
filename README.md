@@ -20,8 +20,10 @@ chmod +x ./setup-apex-agent.sh
 
 Script di atas akan secara otomatis:
 1. Mendeteksi seluruh profil Antigravity di komputer tersebut (`~/.gemini/config/` dan `~/.antigravity-profiles/*/`).
-2. Memasang ruleset global [`AGENTS.md`](file:///C:/Users/binta/.antigravity-profiles/uliarizki/.gemini/config/AGENTS.md).
+2. Memasang ruleset global [`AGENTS.md`](file:///C:/Users/binta/.antigravity-profiles/uliarizki/.gemini/config/AGENTS.md) (TDD, Ponytail YAGNI, & Human-First UI Anti-Slop).
 3. Memasang skill universal [`/start`](file:///C:/Users/binta/.antigravity-profiles/uliarizki/.gemini/config/skills/start-project/SKILL.md).
+4. Memasang skill [`/ponytail`](file:///C:/Users/binta/.antigravity-profiles/uliarizki/.gemini/config/skills/ponytail/SKILL.md) (Lazy senior dev / anti-overengineering).
+5. Memasang skill [`/humanizer`](file:///C:/Users/binta/.antigravity-profiles/uliarizki/.gemini/config/skills/humanizer/SKILL.md) (Anti-AI slop, natural copy, & plain interface language).
 
 ---
 

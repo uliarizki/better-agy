@@ -237,6 +237,18 @@ Never cut: validation at trust boundaries, error handling that prevents data los
 '@
     [System.IO.File]::WriteAllText($ponyFile, $ponyContent, [System.Text.Encoding]::UTF8)
     Write-Host "    -> Installed /ponytail skill (Lazy Senior Dev Mode)" -ForegroundColor Green
+
+    # 3d. Write humanizer skill
+    $humanDir = Join-Path $cfgPath "skills\humanizer"
+    $null = New-Item -ItemType Directory -Path $humanDir -Force
+    $humanFile = Join-Path $humanDir "SKILL.md"
+    $localHuman = Join-Path $PSScriptRoot ".agents\skills\humanizer\SKILL.md"
+    if (Test-Path $localHuman) {
+        Copy-Item -Path $localHuman -Destination $humanFile -Force
+    } else {
+        curl.exe -s -L "https://raw.githubusercontent.com/blader/humanizer/main/SKILL.md" -o $humanFile
+    }
+    Write-Host "    -> Installed /humanizer skill (Anti-AI Slop & Plain Copy)" -ForegroundColor Green
 }
 
 Write-Host "`n==========================================================" -ForegroundColor Cyan
